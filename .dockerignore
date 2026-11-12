@@ -1,0 +1,13 @@
+# Keep these out of the build since none of them are needed inside the image
+
+# Dataset
+data/
+esc50.zip
+
+# Python
+__pycache__/
+venv/
+.venv/
+
+# Git
+.git/
