@@ -1,0 +1,10 @@
+# Dataset (download from GitHub, see README)
+data/
+esc50.zip
+
+# Python
+__pycache__/
+.pytest_cache/
+venv/
+.venv/
+.DS_Store
