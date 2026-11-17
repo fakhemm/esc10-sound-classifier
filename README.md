@@ -41,6 +41,10 @@ python train.py
 python -m pytest -q test_app.py
 ```
 
+## Use of AI tools
+
+The code was written with an AI coding assistant (Claude). I ran everything on my own machine and checked the results: the tests, the accuracy on the training and test clips, and the responses of the API inside the Docker container. The batch-normalisation problem under Results was found during these checks.
+
 ## Limitations
 
 - **Small test set.** The result comes from a single test fold of 80 clips, so one clip is worth 1.25 percentage points.
@@ -50,4 +54,3 @@ python -m pytest -q test_app.py
 ## Acknowledgements
 
 - Dataset: ESC-10, from K. J. Piczak (2015), *ESC: Dataset for Environmental Sound Classification* ([GitHub](https://github.com/karolpiczak/ESC-50)), licensed under Creative Commons Attribution
-- Developed with the help of an AI coding assistant (Claude)
