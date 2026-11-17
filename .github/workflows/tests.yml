@@ -1,0 +1,21 @@
+# Runs the tests on a GitHub server every time a change is pushed to the repository
+
+name: Tests
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Copy the repository onto the server
+      - uses: actions/checkout@v7
+
+      # Install the Python version the project was developed with
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      # Install the dependencies, then run the tests
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q test_app.py
